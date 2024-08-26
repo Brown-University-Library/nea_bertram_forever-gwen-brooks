@@ -1,0 +1,725 @@
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=GFS Didot" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>An Aspect of Love, Alive in the Ice and Fire</title>
+
+<!-- Forever Gwen Brooks, Copyright 2018 Lillian-Yvonne Bertram <lillianyvonnebertram.com>
+
+Copying and distribution of this file, with or without modification, are
+*not* permitted in any medium without the copyright notice and
+this notice must be preserved. This file is offered as-is, without any warranty.
+If you use it, please cite the creator (Lillian-Yvonne Bertram). 
+
+This homage is part of a larger project on Gwendolyn Brooks.
+
+The template comes from Gwendolyn Brooks's poem "An Aspect of Love, Alive in the 
+Ice and Fire", from her book RIOT! 
+
+My thanks to the Woodberry Poetry Room Creative Fellowship at Harvard University,
+where I created the original Python2 templates with a first edition copy of RIOT!
+
+A facsimile of RIOT! is available on the ECLIPSE.org archive. 
+
+-->
+<p>
+
+  </p>
+<style>
+
+		body {
+			
+      
+      margin:25;
+      margin-top: 50px;
+      margin-left:100px;
+
+			/* You can change the colors, font, and so on below */
+			font-size: 14px;
+			font-family: 'GFS Didot';font-size: 22px;
+			text-transform: ; /* uppercase, lowercase, capitalize */
+			color:white; /* red, blue, hex #, etc */
+			background-color:black;
+			text-align:left ; /* center, left, right, justify */ 
+			text-decoration: ; /* overline, line-through, underline */
+			letter-spacing: 1px ; /* 3px, -3px, etc */
+			word-spacing: ; /* 10px, 20px, etc */
+			line-height: 1.0;  /* 0.8, 2.5, etc. */
+			text-shadow: ; /* left, down, color --> "2px 5px red" */
+						   /* left, down, blur, color --> "2px 5px 10px red" */
+			p.thicker {
+    		font-weight: 900;
+			}
+
+		}
+  
+		.title {
+			text-transform:uppercase;
+			font-weight:bold; 
+		}
+
+		.author {
+			margin-left: 200px;
+			font-style: italic;
+		}
+		.line0 {
+
+		}
+
+		.line1 {
+			
+		}
+
+		.line2::first-letter {
+			text-transform: capitalize;
+		}
+
+		.line3::first-letter {
+			text-transform:capitalize;			
+		}
+		.line4{
+
+		}
+		.line5{
+
+		}	
+		.line6::first-letter{
+			text-transform:capitalize;
+		}
+		.line7{
+
+		}
+		.line8::first-letter{
+			text-transform:capitalize;
+
+		}
+		.line9{
+
+		}
+		.line10::first-letter{
+			text-transform:capitalize;
+
+		}
+		.line11{
+			}
+		.line12{
+			}
+		.line13{
+			}
+		.line14{
+			}
+		.line15{
+			}
+		.line16{
+			}
+		.line17{
+			}
+		.line18{
+			}
+		.line19{
+			}
+		.line20{
+			}
+		.line21{
+			}
+		.line22{
+			}
+		.line23{
+			}
+
+		
+
+
+
+
+
+
+		}
+		p {
+			margin-bottom: 2em;
+		}
+
+	</style>
+
+	
+		<script src="jquery-proxy.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			// list one content
+			var adj = [
+				"velvet",
+				"remote",
+				"golden",
+				"bright", 
+				"best",
+				"sweaty", 
+				"unpretty",
+				"rough", 
+				"black", 
+				"loud", 
+				"detainable",
+				"nourished", 
+				"white",
+				"handy",
+				"cheap", 
+				"terrific", 
+				"old", 
+				"desperate", 
+				"broken",
+				"Egyptian", 
+				"beautiful", 
+				"little", 
+				"labeled", 
+				"second", 
+				"remarkable",
+				"crazy", 
+				"young", 
+				"red", 
+				"twenty", 
+				"underfed", 
+				"jerk", 
+				"clean", 
+				"little", 
+				"long-stomped", 
+				"long-straddled", 
+				"light", 
+				"young", 
+				"own", 
+				"old", 
+				"dead", 
+				"Polish", 
+				"newish", 
+				"thorough", 
+				"firm", 
+				"rich", 
+				"nighttime", 
+				"neat", 
+				"New-baby", 
+				"small", 
+				"black-bordered",
+				"exhaustive", 
+				"black", 
+				"mutual", 
+				"upinheah", 
+				"unafraid", 
+				"beautiful", 
+				"other", 
+				"responsible", 
+				"physical", 
+				"genial",
+				"direct",
+				"respectable", 
+				"direct", 
+				"self-accepting", 
+				"African", 
+				"level", 
+				"lean", 
+				"understood", 
+				"not-to-end",
+				"different", 
+				"imperturbable",
+				"expensively",
+				"once", 
+				"richly", 
+				"almost", 
+				"ever", 
+				"down", 
+				"instantly", 
+				"forward", 
+				"decently", 
+				"sometimes", 
+				"instead", 
+				"merely", 
+				"however", 
+				"better", 
+				"again",
+				"discreet", 
+				"thrilling", 
+				"desperate",
+				"thousandfold", 
+				"gross",
+				"west",
+				"disciples",
+				"merry"
+				
+			];
+
+			// list two content
+			var verb = [
+				"wrapped", 
+				"is", 
+				"happened", 
+				"forgot", 
+				"were", 
+				"coming", 
+				"discreet", 
+				"itched", 
+				"told", 
+				"do", 
+				"let", 
+				"touch", 
+				"whispered", 
+				"drove", 
+				"breathed", 
+				"touched", 
+				"mocked", 
+				"averted", 
+				"jerked", 
+				"cried", 
+				"are", 
+				"went",
+				"cried", 
+				"know", 
+				"do", 
+				"lived", 
+				"consumed", 
+				"rising", 
+				"renewed", 
+				"is", 
+				"be", 
+				"reflected", 
+				"says", 
+				"are", 
+				"do", 
+				"hear", 
+				"mind", 
+				"crunch", 
+				"do", 
+				"hear", 
+				"die", 
+				"hear", 
+				"make", 
+				"eating", 
+				"cry", 
+				"spreading", 
+				"hissing", 
+				"run", 
+				"steal", 
+				"made", 
+				"know", 
+				"are", 
+				"sticking", 
+				"knowing", 
+				"go", 
+				"hear", 
+				"going", 
+				"is", 
+				"lighting", 
+				"said", 
+				"curse", 
+				"inverting", 
+				"run", 
+				"comes", 
+				"sirening", 
+				"lies", 
+				"held", 
+				"had", 
+				"partake", 
+				"say", 
+				"treat", 
+				"tell", 
+				"check", 
+				"was", 
+				"do", 
+				"kill", 
+				"blares", 
+				"tell", 
+				"assure",
+				"let", 
+				"explode", 
+				"pass", 
+				"ranging",
+				"do", 
+				"offend", 
+				"say", 
+				"help", 
+				"are", 
+				"told",
+				"made", 
+				"rises", 
+				"remember", 
+				"came", 
+				"exulted", 
+				"was", 
+				"say", 
+				"settled", 
+				"laugh",
+				"touch", 
+				"are",
+				"wonder", 
+				"rise", 
+				"observe", 
+				"be", 
+				"bear", 
+				"shining", 
+				"smile", 
+				"go", 
+				"thrilling",
+				"rattle",
+				"mute", 
+				"dust",
+				"confer",
+				"peer",
+				"purr",
+				"herald", 
+				"yells", 
+				"twittering", 
+				"candles",
+				"candle",
+				"scatter",  
+				"long-stomped",  
+				"long-straddled", 
+				"steal in hell",  
+				"unheard",  
+				"cry up",  
+				"labeled",
+				"keep",
+				"stalks",
+				"loaded",
+				"stir",
+				"hurt",
+				"package",
+				"stride"
+ 
+			];
+
+			// list three content
+			var noun = [
+				"velvet", 
+				"lion",
+				"stride",
+				"package",
+				"hurt",
+				"passion",
+				"gal",
+				"oblongs",
+				"man-to-many",
+				"exit",
+				"junk",
+				"mornings",
+				"guard",
+				"rioters",
+				"nobody",
+				"keep",
+				"keeper",
+				"bluff",
+				"lake",
+				"jaguar",
+				"language",
+				"riot",
+				"rumor",
+				"Peanut", 
+				"signature", 
+				"span", 
+				"herald", 
+				"lover", 
+				"Rangermen",
+				"time", 
+				"people", 
+				"lies", 
+				"legends", 
+				"Phoenix", 
+				"dust", 
+				"street", 
+				"interruption", 
+				"sermon",
+				"ice",
+				"fire", 
+				"love", 
+				"Camaraderie",
+				"joy", 
+				"place", 
+				"wiggles", 
+				"trebles", 
+				"head", 
+				"haunches", 
+				"jerk", 
+				"jazz", 
+				"darkness",
+				"curse", 
+				"geography", 
+				"guns", 
+				"chatter", 
+				"Law", 
+				"town", 
+				"woman",
+				"Motherwoman", 
+				"Christmas",
+				"boxes", 
+				"hats", 
+				"sausages",
+				"virginity", 
+				"fudge", 
+				"steak", 
+				"chicken", 
+				"wine", 
+				"gut", 
+				"deathintheafternoon", 
+				"integrity", 
+				"America", 
+				"nigguhs", 
+				"poem", 
+				"parts",
+				"hair",  
+				"linen",  
+				"wool",  
+				"scotch",  
+				"sculpture",  
+				"kidney",  
+				"pie",  
+				"street",  
+				"rank",  
+				"seas",  
+				"windsweep",
+				"black",  
+				"white", 
+				"world",  
+				"blackness",  
+				"angel",  
+				"sky",  
+				"announcement",  
+				"breath",  
+				"fume",  
+				"pig",  
+				"foot",  
+				"chitterling",  
+				"children",
+				"chili",  
+				"doubt",  
+				"man",  
+				"today",
+				"smoke",  
+				"fire",  
+				"glass",  
+				"blood",  
+				"earth",  
+				"place",  
+				"watermirrors",  
+				"goldenrod",  
+				"lagoon",  
+				"chains",  
+				"cabinet",  
+				"shelf",  
+				"cookies",  
+				"sonatas",
+				"arabesques",  
+				"rattles",  
+				"music",  
+				"blackblues",
+				"kitchen",  
+				"food",  
+				"flowers",  
+				"men",  
+				"wire",  
+				"stalks",  
+				"haunches",  
+				"hell",  
+				"radio",  
+				"sin",  
+				"candles",
+				"candle",
+				"thing",
+				"maxim", 
+				"Negroes",
+				"ranks",
+				"story",
+				"glory",
+				"Lord",
+				"warpland",
+				"mythology",
+				"bird",
+				"years",
+				"ashes",
+				"West",
+				"philosopher",
+				"twelve",
+				"bull",
+				"gentleman", 
+				"aspect",
+				"selves",
+				"time",
+				"ice", 
+				"fire", 
+				"minutes",
+				"foreigners",
+				"props",
+				"posts",
+				"light",
+				"room", 
+				"window",
+				"moment",
+				"directions"
+
+			];
+
+			// list four content
+			var perpro = [
+				"they", 
+				"him", 
+				"they", 
+				"it", 
+				"me", 
+				"he", 
+				"it", 
+				"him", 
+				"him", 
+				"you", 
+				"he", 
+				"they", 
+				"you", 
+				"it", 
+				"them", 
+				"I", 
+				"she", 
+				"she", 
+				"he", 
+				"me", 
+				"it", 
+				"we", 
+				"us", 
+				"I", 
+				"you", 
+				"them", 
+				"they",
+				"it", 
+				"it", 
+				"they",
+				"it", 
+				"they", 
+				"it", 
+				"we", 
+				"we", 
+				"we", 
+				"we", 
+				"you", 
+				"you", 
+				"yourself",
+				"I", 
+				"you", 
+				"you", 
+				"I", 
+				"we", 
+				"we"
+
+
+			];
+
+			var refpro = [
+				"yourself",
+				"themselves",
+				"itself"
+				];
+
+			var pospro = [
+				"his", 
+				"his", 
+				"his", 
+				"our", 
+				"her", 
+				"her", 
+				"their",
+				"their", 
+				"your", 
+				"his", 
+				"their", 
+				"our", 
+				"our", 
+				"your"
+
+				];
+
+
+	// This is a very common randomizing function.
+			// It takes a list (array) and returns one at random.
+			function select_random(x){
+				y = x[Math.floor(Math.random()*x.length)];
+				return y;
+			}
+
+			// This is the generator function
+			function generate(){
+
+				// Select a random item from each list
+				var selected_verb = select_random(verb);
+				var selected_adj = select_random(adj);
+				var selected_pospro = select_random(pospro);
+				var selected_perpro = select_random(perpro);
+				var selected_refpro = select_random(refpro);
+				var selected_noun = select_random(noun);
+
+				// Make a paragraph and then add the selected (random) item from each list list
+				$('body').append('<p>');
+				$('body').append('<div class="title">' + "An aspect of " + select_random(noun) + "," + "<br>alive in the " + select_random(noun) + " and " + select_random(noun) + '</div>');
+				$('body').append('<br><br>');
+				$('body').append('<div class = "author"><a href="about.html">by Gwendolyn Brooks</a>');
+				//$('body').append('<div class="author">' + "by Gwendolyn Brooks");
+				$('body').append('<br><br><br>');
+				$('body').append('<div class="line0">' + "It is the " +  select_random(noun) + " of our " + select_random(noun) + "." + '</div>');
+				$('body').append('</p>');
+				$('body').append('<p>');
+				$('body').append('<div class="line1">' + "In a " +  select_random(noun) + " in " + select_random(noun) + " there is this " + select_random(perpro) + "." + '</div>');
+				$('body').append('<div class="line2">' + "How " + select_random(adj) + "." + '</div>');
+				$('body').append('<div class="line3">' + select_random(adj) + " " + select_random(noun) + " in our " + select_random(noun) + "," + '</div>');
+				$('body').append('<div class="line4">' + select_random(perpro) + " " + select_random(verb) + ", " + " we " + select_random(verb) + " each other," + '</div>');
+				$('body').append('<div class="line5">' + "are " + select_random(adj) + " " + select_random(noun) + " and " + select_random(noun) + "." + '</div>');
+				$('body').append('</p>');
+				$('body').append('<p>');
+				$('body').append('<div class="line6">' +select_random(adj) + " light is in the " +  select_random(noun) + "." + '</div>');
+				$('body').append('</p>');
+				$('body').append('<p>');
+				$('body').append('<div class="line6">' + "Because the " + select_random(noun) + " is at the " +  select_random(noun) + '</div>');
+				$('body').append('<div class="line7">' + "we cannot " + select_random(verb) + " very long. " + '</div>');
+				$('body').append('</p>');
+				$('body').append('<p>');
+				$('body').append('<div class="line8">' + select_random(perpro) + " " + select_random(verb) + ", " + "although" + '</div>');
+				$('body').append('<div class="line9">' + select_random(adj) + " " + select_random(perpro) + " are in " + select_random(refpro) + " again." + '</div>');
+				$('body').append('<div class="line10">' + select_random(perpro) + " " + select_random(verb) + '</div>');
+				$('body').append('<div class="line11">' + select_random(pospro) + " " + select_random(adj) + " " + select_random(adj) + " " + select_random(noun) + '</div>');
+				$('body').append('<div class="line12">' + select_random(perpro) + " " + select_random(adj) + " " + select_random(adj) + " and " + select_random(verb) + " as a " + select_random(noun) + "." + '</div>');
+				$('body').append('<div class="line13">' + "In " + select_random(noun) + ", " + select_random(perpro) + " " + select_random(verb) + " " + select_random(adj) + '</div>');
+				$('body').append('<div class="line13">' + select_random(adj) +"." + '</div>');
+				$('body').append('</p>');
+				$('body').append('<p>');
+				$('body').append('<div class="line14">' + "There is a moment in " + select_random(noun) + '</div>');
+				$('body').append('<div class="line15">' + "when " + select_random(noun) + " is not to be understood." + '</div>');
+				$('body').append('<div class="line16">' + "I cannot bear " + select_random(noun) + "." + '</div>');
+				$('body').append('<div class="line17">' + "This is the " + select_random(adj) + " " + select_random(noun) + ";" + '</div>');
+				$('body').append('<div class="line18">' + "the " + select_random(noun) + " of not-to-end." + '</div>');
+				$('body').append('</p>');
+				$('body').append('<p>');
+				$('body').append('<div class="line19">' + "On the street we " + select_random(verb) + "." + '</div>');
+				$('body').append('<div class="line20">' + "We " + select_random(verb) + '</div>');
+				$('body').append('<div class="line21">' + "in " + select_random(adj) + " directions" + '</div>');
+				$('body').append('<div class="line22">' + "down the " + select_random(adj) + " street." +'</div>');
+				$('body').append('</p>');
+			}
+
+					// Run the generator every two seconds ("2000" in the code below)
+//			function timeout() {
+//			    setTimeout(function () {
+//			        generate();
+//			        timeout();
+//			    }, 50000000);
+//			}
+
+			generate();
+
+			timeout();
+			
+		});
+
+	</script>
+  <button type="button" onclick="location.reload();" style="position:fixed;bottom:10%;right:20%;background-color:white; padding:15px 15px;color:white;font-weight:800">reduxredux</button>
+	<!-- 
+	***** END JAVASCRIPT ***** 
+	-->
+
+</head>
+</html>
+
